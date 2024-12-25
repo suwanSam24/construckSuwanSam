@@ -661,7 +661,8 @@ a:focus {
   padding-left: 25px;
   background-color: #ffffff;
   outline: none;
-  color: #ffffff;
+  color: #252222;
+  /* color: #ffffff; */
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
@@ -838,3 +839,4 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
