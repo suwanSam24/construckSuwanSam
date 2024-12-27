@@ -86,53 +86,8 @@ function contactmail() {
                 Messagemail: Messagemail,
             },
             success: (response) => {
-              console.log('good',response);
-              // if (response.RespCode == 200) {
-              //     if (response.RespMessage=='token') {
-              //     email_state = true;
-              //     $('#emailAddress').parent().removeClass();
-              //     $('#emailAddress').parent().addClass('box-passResetEmail success');
-              //     $.ajax({
-              //         method: 'post',
-              //         url: '/api/send_email_resetRukCom.php',
-              //         data: {
-              //         emailAddress: emailAddress,
-              //         },
-              //         success: (response) => {
-              //         // console.log('receiveMail',response);
-              //         if (response.RespCode == 200) {
-              //             if (response.RespMessage=='semtmailsuccess') {
-              //             // console.log("1");
-              //             swal({
-              //                 title: "Semt Mail Success",
-              //                 icon: 'success'
-              //             })
-              //             }
-              //         }
-              //         else if(response.RespCode == 400) {
-              //             if (response.RespMessage=='semtmailerror') {
-              //             swal({
-              //                 title: "Semt mail error. Please resend.",
-              //                 icon: 'error'
-              //             })
-              //             }
-              //         }
-              //         },
-              //         error: function (err) {
-              //         console.log('bad',err)
-              //         }
-              //     })
-              //     }
-              // }
-              // else if(response.RespCode == 400) {
-              //     if (response.RespMessage=='not_token') {
-              //         email_state = false;
-              //         $('#emailEdit').parent().removeClass();
-              //         $('#emailEdit').parent().addClass('box-passResetEmail error');
-              //         $('#box-btn').addClass('box-btn error');
-              //         $('#emailAddress').siblings('small').text('Email not available in the system. Please register first.');
-              //     }
-              // }
+            //   console.log('good',response);
+              alert("Message sent successfully");
             },
             error: function (err) {
               console.log("bad", err);
