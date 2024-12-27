@@ -1,207 +1,271 @@
+// validate email register
+function validateEmail(email) {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+// validate name register
+function validateName(name) {
+  const regName =
+    /^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$/;
+  return regName.test(name);
+}
+function validatePhone(phone) {
+  // Regex pattern for common phone number formats
+  const patt = /^(\+?\d{1,3}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/;
+  return patt.test(phone);
+}
+// const pNum = [
+//   "123-456-7890",
+//   "(123) 456-7890",
+//   "+1 123-456-7890",
+//   "1234567890",
+//   "+91 (123) 456-7890",
+// ];
+
 function contactmail() {
+  // let email_state = true;
+  let Namemail = $("#Namemail").val();
+  let Phonemail = $("#Phonemail").val();
+  let Emailaddress = $("#Emailaddress").val();
+  let Messagemail = $("#Messagemail").val();
+  // console.log(Namemail);
+  // console.log(Phonemail);
+  // console.log(Emailaddress);
+  // console.log(Messagemail);
+  let name_state = true;
+  let email_state = true;
+  let phone_state = true;
+  let message_state = true;
 
-    // let email_state = true;
-    let Namemail = $('#Namemail').val();
-    let Phonemail = $('#Phonemail').val();
-    let Emailaddress = $('#Emailaddress').val();
-    let Messagemail = $('#Messagemail').val();
-    console.log(Namemail);
-    console.log(Phonemail);
-    console.log(Emailaddress);
-    console.log(Messagemail);
+  if (Emailaddress == "") {
+    alert("Please enter your email address.");
+    email_state = false;
+  } else if (Emailaddress != "") {
+    if (!validateEmail(Emailaddress.trim())) {
+      alert("Invalid Email , Ex.. suwanconstruction@gmail.com");
+      email_state = true;
+    } else {
+      if (!validateName(Namemail.trim())) {
+        alert("Please fill in your first and last name.");
+        name_state = false;
+      } else {
+        name_state = true;
+      }
+      //   pNum.forEach(num => {
+      //     console.log(`${num} ` +
+      //         `is ${validatePhone(num)
+      //           ? 'valid' : 'invalid'}`);
+      //   });
+      if (!validatePhone(Phonemail.trim())) {
+        alert("Please enter your phone number.");
+        phone_state = false;
+      } else {
+        phone_state = true;
+      }
+      if (Messagemail == "") {
+        alert("Please fill in the message.");
+        message_state = false;
+      } else {
+        message_state = true;
 
-    // if (Emailaddress == '') {
-    //     alert("Please enter your email address.");
-    // }
-    // else if (Emailaddress !='') {
-    //     $.ajax({
-    //         method: 'post',
-    //         url: '/api/send_email_resetRukCom.php',
-    //         data: {
-    //             Emailaddress: Emailaddress,
-    //         },
-    //         success: (response) => {
-    //             // console.log('good',response);
+        if (
+          email_state == true &&
+          name_state == true &&
+          phone_state == true &&
+          message_state == true
+        ) {
+          // console.log("send email");
+          $.ajax({
+            method: "post",
+            url: "sendmessage.php",
+            data: {
+                Namemail: Namemail,
+                Phonemail: Phonemail,
+                Emailaddress: Emailaddress,
+                Messagemail: Messagemail,
+            },
+            success: (response) => {
+              console.log('good',response);
+              // if (response.RespCode == 200) {
+              //     if (response.RespMessage=='token') {
+              //     email_state = true;
+              //     $('#emailAddress').parent().removeClass();
+              //     $('#emailAddress').parent().addClass('box-passResetEmail success');
+              //     $.ajax({
+              //         method: 'post',
+              //         url: '/api/send_email_resetRukCom.php',
+              //         data: {
+              //         emailAddress: emailAddress,
+              //         },
+              //         success: (response) => {
+              //         // console.log('receiveMail',response);
+              //         if (response.RespCode == 200) {
+              //             if (response.RespMessage=='semtmailsuccess') {
+              //             // console.log("1");
+              //             swal({
+              //                 title: "Semt Mail Success",
+              //                 icon: 'success'
+              //             })
+              //             }
+              //         }
+              //         else if(response.RespCode == 400) {
+              //             if (response.RespMessage=='semtmailerror') {
+              //             swal({
+              //                 title: "Semt mail error. Please resend.",
+              //                 icon: 'error'
+              //             })
+              //             }
+              //         }
+              //         },
+              //         error: function (err) {
+              //         console.log('bad',err)
+              //         }
+              //     })
+              //     }
+              // }
+              // else if(response.RespCode == 400) {
+              //     if (response.RespMessage=='not_token') {
+              //         email_state = false;
+              //         $('#emailEdit').parent().removeClass();
+              //         $('#emailEdit').parent().addClass('box-passResetEmail error');
+              //         $('#box-btn').addClass('box-btn error');
+              //         $('#emailAddress').siblings('small').text('Email not available in the system. Please register first.');
+              //     }
+              // }
+            },
+            error: function (err) {
+              console.log("bad", err);
+            },
+          });
+        }
+      }
+    }
+  }
 
-    //             // if (response.RespCode == 200) {
-    //             //     if (response.RespMessage=='token') {
-    //             //     email_state = true;
-    //             //     $('#emailAddress').parent().removeClass();
-    //             //     $('#emailAddress').parent().addClass('box-passResetEmail success');
-                    
-    //             //     $.ajax({
-    //             //         method: 'post',
-    //             //         url: '/api/send_email_resetRukCom.php',
-    //             //         data: {
-    //             //         emailAddress: emailAddress,
-    //             //         },
-    //             //         success: (response) => {
-    //             //         // console.log('receiveMail',response);
-    //             //         if (response.RespCode == 200) {
-    //             //             if (response.RespMessage=='semtmailsuccess') { 
-    //             //             // console.log("1");
-    //             //             swal({
-    //             //                 title: "Semt Mail Success",
-    //             //                 icon: 'success'
-    //             //             })
-    //             //             }
-    //             //         }
-    //             //         else if(response.RespCode == 400) {
-    //             //             if (response.RespMessage=='semtmailerror') {
-    //             //             swal({
-    //             //                 title: "Semt mail error. Please resend.",
-    //             //                 icon: 'error'
-    //             //             })
-    //             //             }
-    //             //         }
-    //             //         },
-    //             //         error: function (err) {
-    //             //         console.log('bad',err)
-    //             //         }
-    //             //     })
+  // if (emailAddress.length == '') {
+  //   emailAddress = false;
+  //     $('#emailAddress').parent().removeClass();
+  //     $('#emailAddress').parent().addClass('box-passResetEmail error');
+  //     $('#box-btn').addClass('box-btn error');
+  //     $('#emailAddress').siblings('small').text('Invalid Email');
+  // }
+  // else if (emailAddress.length != '') {
 
-    //             //     }
-    //             // } 
-    //             // else if(response.RespCode == 400) {
-    //             //     if (response.RespMessage=='not_token') {
-    //             //         email_state = false;
-    //             //         $('#emailEdit').parent().removeClass();
-    //             //         $('#emailEdit').parent().addClass('box-passResetEmail error');
-    //             //         $('#box-btn').addClass('box-btn error');
-    //             //         $('#emailAddress').siblings('small').text('Email not available in the system. Please register first.');
-    //             //     }
-    //             // }
-    //         },
-    //         error: function (err) {
-    //             console.log('bad',err)
-    //         }
-    //     });
-    // }
+  //     if (!validateEmail(emailAddress.trim())) {
+  //         email_state = false;
+  //         $('#emailAddress').parent().removeClass();
+  //         $('#emailAddress').parent().addClass('box-passResetEmail error');
+  //         $('#box-btn').addClass('box-btn error');
+  //         $('#emailAddress').siblings('small').text('Invalid Email , Ex.. photopanda134@gmail.com');
+  //     }
+  //     else {
 
-    // if (emailAddress.length == '') {
-    //   emailAddress = false;
-    //     $('#emailAddress').parent().removeClass();
-    //     $('#emailAddress').parent().addClass('box-passResetEmail error');
-    //     $('#box-btn').addClass('box-btn error');
-    //     $('#emailAddress').siblings('small').text('Invalid Email');
-    // }
-    // else if (emailAddress.length != '') {
+  //         $.ajax({
+  //             method: 'get',
+  //             url: '/model/check_email_RukCom.php',
+  //             data: {
+  //                 emailUser: emailAddress,
+  //             },
+  //             success: (response) => {
+  //                 // console.log('good',response);
 
-    //     if (!validateEmail(emailAddress.trim())) {
-    //         email_state = false;
-    //         $('#emailAddress').parent().removeClass();
-    //         $('#emailAddress').parent().addClass('box-passResetEmail error');
-    //         $('#box-btn').addClass('box-btn error');
-    //         $('#emailAddress').siblings('small').text('Invalid Email , Ex.. photopanda134@gmail.com');
-    //     } 
-    //     else {
-                        
-    //         $.ajax({
-    //             method: 'get',
-    //             url: '/model/check_email_RukCom.php',
-    //             data: {
-    //                 emailUser: emailAddress,
-    //             },
-    //             success: (response) => {
-    //                 // console.log('good',response);
-    
-    //                 if (response.RespCode == 200) {
-    //                   if (response.RespMessage=='token') {
-    //                     email_state = true;
-    //                     $('#emailAddress').parent().removeClass();
-    //                     $('#emailAddress').parent().addClass('box-passResetEmail success');
-                        
-    //                     $.ajax({
-    //                       method: 'post',
-    //                       url: '/api/send_email_resetRukCom.php',
-    //                       data: {
-    //                         emailAddress: emailAddress,
-    //                       },
-    //                       success: (response) => {
-    //                         // console.log('receiveMail',response);
-    //                         if (response.RespCode == 200) {
-    //                           if (response.RespMessage=='semtmailsuccess') { 
-    //                             // console.log("1");
-    //                             swal({
-    //                                 title: "Semt Mail Success",
-    //                                 icon: 'success'
-    //                             })
-    //                           }
-    //                         }
-    //                         else if(response.RespCode == 400) {
-    //                           if (response.RespMessage=='semtmailerror') {
-    //                             swal({
-    //                                 title: "Semt mail error. Please resend.",
-    //                                 icon: 'error'
-    //                             })
-    //                           }
-    //                         }
-    //                       },
-    //                       error: function (err) {
-    //                         console.log('bad',err)
-    //                       }
-    //                     })
+  //                 if (response.RespCode == 200) {
+  //                   if (response.RespMessage=='token') {
+  //                     email_state = true;
+  //                     $('#emailAddress').parent().removeClass();
+  //                     $('#emailAddress').parent().addClass('box-passResetEmail success');
 
-    //                   }
-    //                 } 
-    //                 else if(response.RespCode == 400) {
-    //                     if (response.RespMessage=='not_token') {
-    //                         email_state = false;
-    //                         $('#emailEdit').parent().removeClass();
-    //                         $('#emailEdit').parent().addClass('box-passResetEmail error');
-    //                         $('#box-btn').addClass('box-btn error');
-    //                         $('#emailAddress').siblings('small').text('Email not available in the system. Please register first.');
-    //                     }
-    //                 }
-    //             },
-    //             error: function (err) {
-    //                 console.log('bad',err)
-    //             }
-    //         });
+  //                     $.ajax({
+  //                       method: 'post',
+  //                       url: '/api/send_email_resetRukCom.php',
+  //                       data: {
+  //                         emailAddress: emailAddress,
+  //                       },
+  //                       success: (response) => {
+  //                         // console.log('receiveMail',response);
+  //                         if (response.RespCode == 200) {
+  //                           if (response.RespMessage=='semtmailsuccess') {
+  //                             // console.log("1");
+  //                             swal({
+  //                                 title: "Semt Mail Success",
+  //                                 icon: 'success'
+  //                             })
+  //                           }
+  //                         }
+  //                         else if(response.RespCode == 400) {
+  //                           if (response.RespMessage=='semtmailerror') {
+  //                             swal({
+  //                                 title: "Semt mail error. Please resend.",
+  //                                 icon: 'error'
+  //                             })
+  //                           }
+  //                         }
+  //                       },
+  //                       error: function (err) {
+  //                         console.log('bad',err)
+  //                       }
+  //                     })
 
-    //         email_state = false;
-    //         $('#emailAddress').parent().removeClass();
-    //         $('#emailAddress').parent().addClass('box-passResetEmail error');
-    //         $('#box-btn').addClass('box-btn error');
-    //         $('#emailAddress').siblings('small').text('Email not available in the system. Please register first.');
+  //                   }
+  //                 }
+  //                 else if(response.RespCode == 400) {
+  //                     if (response.RespMessage=='not_token') {
+  //                         email_state = false;
+  //                         $('#emailEdit').parent().removeClass();
+  //                         $('#emailEdit').parent().addClass('box-passResetEmail error');
+  //                         $('#box-btn').addClass('box-btn error');
+  //                         $('#emailAddress').siblings('small').text('Email not available in the system. Please register first.');
+  //                     }
+  //                 }
+  //             },
+  //             error: function (err) {
+  //                 console.log('bad',err)
+  //             }
+  //         });
 
-    //     }
-        
-    // }
+  //         email_state = false;
+  //         $('#emailAddress').parent().removeClass();
+  //         $('#emailAddress').parent().addClass('box-passResetEmail error');
+  //         $('#box-btn').addClass('box-btn error');
+  //         $('#emailAddress').siblings('small').text('Email not available in the system. Please register first.');
 
+  //     }
+
+  // }
 }
 
 // Get Current Year
 function getCurrentYear() {
-    var d = new Date();
-    var year = d.getFullYear();
-    document.querySelector("#displayDateYear").innerText = year;
+  var d = new Date();
+  var year = d.getFullYear();
+  document.querySelector("#displayDateYear").innerText = year;
 }
-getCurrentYear()
+getCurrentYear();
 
 //client section owl carousel
 $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: false,
-    navText: [
-        '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>',
-        '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'
-    ],
-    autoplay: true,
-    autoplayHoverPause: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        768: {
-            items: 2
-        },
-        1000: {
-            items: 2
-        }
-    }
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: [
+    '<i class="fa fa-long-arrow-left" aria-hidden="true"></i>',
+    '<i class="fa fa-long-arrow-right" aria-hidden="true"></i>',
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+    },
+    1000: {
+      items: 2,
+    },
+  },
 });
 
 /** google_map js **/
