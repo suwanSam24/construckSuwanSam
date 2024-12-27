@@ -37,7 +37,8 @@ if (isset($_REQUEST['Emailaddress'])) {
     $mail->Password   = 'xjueesshbztkvpom';                               //SMTP password
     $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
     // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = 443;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    // $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('suwanandsamthaiphuket@gmail.com', 'suwanconstruction');
