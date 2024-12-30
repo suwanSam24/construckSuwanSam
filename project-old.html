@@ -15,9 +15,14 @@
   <title>Suwan / SAM </title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- lightbox2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css">
+
   <!-- font awesome style -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 
@@ -59,7 +64,8 @@
               </span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
             </button>
 
@@ -68,10 +74,10 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item ">
                   <a class="nav-link" href="about.html"> About</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item active">
                   <a class="nav-link" href="project.html"> Project</a>
                 </li>
                 <li class="nav-item">
@@ -89,35 +95,63 @@
     <!-- end header section -->
   </div>
 
-  <!-- about section -->
+  <!-- project section -->
+  <div class="photo-gallery">
 
-  <section class="about_section layout_padding">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-6">
-          <div class="detail-box">
-            <h2>
-              About us
-            </h2>
-            <p>
-              Suwan Construction co.,ltd. / SAM Consultant. provides construction management and supervision services by a team of experienced engineers, architects and technicians, from the design stage until construction is completed and delivered to the customer.
-            </p>
-            <!-- <a href="">
-              Read More
-            </a> -->
-          </div>
-        </div>
-        <div class="col-lg-7 col-md-6">
-          <div class="img-box">
-            <img src="images/466972136_543558101799757_6551505222236045764_n.jpg" alt="">
-            <!-- <img src="images/about-img.jpg" alt=""> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- end about section -->
+      <div class="intro">
+        <h2 class="text-center">Ao Por Villa</h2>
+        <p class="text-center">Luxury SIngle pool villa ( To the owner)  2,650 sqm. 98 million baht </p>
+      </div>
+
+      <div class="row photos">
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mx-auto item">
+          <a href="images/462800168_519897684165799_7389463995673668569_n.jpg" data-lightbox="photos">
+            <img class="img-fluid" src="images/462800168_519897684165799_7389463995673668569_n.jpg">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mx-auto item">
+          <a href="images/462766340_519897907499110_7257405991604016784_n.jpg" data-lightbox="photos">
+            <img class="img-fluid" src="images/462766340_519897907499110_7257405991604016784_n.jpg">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mx-auto item">
+          <a href="images/462777002_519897937499107_4491865723364098776_n.jpg" data-lightbox="photos">
+            <img class="img-fluid" src="images/462777002_519897937499107_4491865723364098776_n.jpg">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mx-auto item">
+          <a href="images/462881208_519898027499098_480005294188927129_n.jpg" data-lightbox="photos">
+            <img class="img-fluid" src="images/462881208_519898027499098_480005294188927129_n.jpg">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mx-auto item">
+          <a href="images/462776876_519898374165730_5299436386470514715_n.jpg" data-lightbox="photos">
+            <img class="img-fluid" src="images/462776876_519898374165730_5299436386470514715_n.jpg">
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 mx-auto item">
+          <a href="images/462890951_519898520832382_8175740227650897217_n.jpg" data-lightbox="photos">
+            <img class="img-fluid" src="images/462890951_519898520832382_8175740227650897217_n.jpg">
+          </a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- end project section -->
 
   <!-- info section -->
   <section class="info_section ">
@@ -231,9 +265,11 @@
   <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"></script>
   <script src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 
 

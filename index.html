@@ -82,6 +82,9 @@
                   <a class="nav-link" href="about.html"> About</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="project.html"> Project</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
                 <li class="nav-item">
@@ -143,12 +146,98 @@
     <!-- end slider section -->
   </div>
 
+  <!-- The Modal -->
+
+  <div id="myModalSupervision" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeSupervision">&times;</span>
+      <img src="images/crop-architect-opening-blueprint.jpg" alt="">
+      <p>Plan and organize construction supervision.<br>
+        Arrange Kick off meeting to introduce all parties to their scope and responsibilities <br>
+        Monitor and review of monthly construction schedule. <br>
+        Conduct on site meetings. <br>
+        Problem resolution in construction and set up counter measures.
+      </p>
+    </div>
+
+  </div>
+
+  <div id="myModalQuality" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeQuality">&times;</span>
+      <img src="images/young-asian-engineers-caucasian-engineer-colleagues-site-inspector-discuss-together-using-notebook-computer-paper-blueprint-building-construction-sitehome-renovation-ideas-concept.jpg" alt="">
+      <p>Co-ordination with contractor to ensure conformance to drawings, specifications, and the Client / <br>
+        architect requirements. <br>
+        Review and seek approval that material conforms to specification. <br>
+        Inspect, monitor and review construction safety standard. <br>
+        Propose and recommend adjustments in construction details with good and bad points with purpose <br>
+        to ensure efficiency of construction, shorten construction period, budget control, and conform to related <br>
+        requirements. <br>
+        Make any necessary adjustments in detail drawings for construction, and supervision of appropriate <br>
+        shop drawing approval before implementing in construction. <br>
+        Ensure that any construction variation conforms to specification, the Client’s requirements, and budget.
+      </p>
+    </div>
+
+  </div>
+
+  <div id="myModalBudget" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeBudget">&times;</span>
+      <img src="images/coins-1015125_1280.jpg" alt="">
+      <p>Participate in all material selection process and ensure that it conforms in quality and design with  <br>
+        entered contract. <br>
+        Ensure compliance between interior, architectural and structural drawings. <br>
+        Assists in negations regarding additional orders, expansion in work scope of contractor and   <br>
+        additional material orders. To ensure they conform to previous intentions. <br>
+        Review and certify contractor’s monthly applications for payment. <br>
+        Review and certify any approved variations.
+      </p>
+    </div>
+
+  </div>
+
+  <div id="myModalReport" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeReport">&times;</span>
+      <img src="images/chart-3373119_1280.jpg" alt="">
+      <p>Preparation of a monthly / final progress document, illustrating any deviation from entered contract,   <br>
+        which requires written advance notice and approval from the Client. <br>
+        The report should include. <br>
+        General progress of construction. <br>
+        Progress according to contract in regards time frame, quality and variations. <br>
+        Advice regarding changes in the budget. <br>
+        Preparation of a monthly / final progress document, illustrating any deviation from entered contract,
+      </p>
+    </div>
+
+  </div>
+
+  <div id="myModalRenovate" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeRenovate">&times;</span>
+      <img src="images/architect-1080592_1280.jpg" alt="">
+      <p>To repair or rebuild and improve something, especially building / housing project / hotel and etc. </p>
+    </div>
+
+  </div>
+
   <!-- feature section -->
   <section class="feature_section">
     <div class="container">
       <div class="feature_container">
 
-        <div class="box">
+        <div class="box" id="myBtnSupervision">
           <div class="img-box">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye"
@@ -164,80 +253,170 @@
           </h5>
         </div>
 
-        <div class="box active">
+        <div class="box active" id="myBtnQuality">
           <div class="img-box">
-            <svg fill="#000000" width="800px" height="800px" version="1.1" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg">
+            <svg fill="#000000" width="800px" height="800px" version="1.1" viewBox="144 144 512 512"
+              xmlns="http://www.w3.org/2000/svg">
               <g>
-               <path d="m547.63 295.44c-3.8906-4.7578-7.2461-9.9297-9.9961-15.43-2.0938-6.1211-3.4961-12.457-4.1719-18.891-0.71875-15.188-6.3789-29.719-16.121-41.391-11.672-9.7461-26.207-15.406-41.391-16.125-6.4336-0.68359-12.77-2.082-18.895-4.1719-5.4961-2.75-10.672-6.1016-15.43-9.9961-11.441-10.586-26.094-17.047-41.625-18.359-15.512 1.3086-30.145 7.75-41.582 18.312-4.7578 3.8906-9.9336 7.2461-15.43 9.9961-6.1211 2.0977-12.457 3.4961-18.891 4.1719-15.203 0.71094-29.754 6.3711-41.441 16.125-9.7422 11.668-15.402 26.203-16.121 41.391-0.68359 6.4336-2.082 12.77-4.1719 18.891-2.75 5.4961-6.1055 10.672-9.9961 15.43-10.57 11.449-17.016 26.102-18.312 41.629 1.3086 15.512 7.75 30.145 18.312 41.578 3.8906 4.7578 7.2461 9.9336 9.9961 15.43 2.0977 6.1211 3.4961 12.457 4.1719 18.895 0.71875 15.184 6.3828 29.719 16.121 41.391 2.3398 2.2266 4.9219 4.1797 7.6992 5.8242-0.27734 0.92578-0.46875 1.875-0.56641 2.8359v141.7c-0.019531 2.8516 0.75 5.6562 2.2227 8.1016 1.4727 2.4453 3.5898 4.4375 6.1211 5.7539 2.4844 1.3867 5.3047 2.0469 8.1445 1.9102 2.8398-0.14062 5.582-1.0742 7.918-2.6992l38.57-25.664 38.574 25.664c2.5508 1.7422 5.5703 2.6758 8.6602 2.6758s6.1055-0.93359 8.6562-2.6758l38.574-25.664 38.574 25.664c3.1719 2.0898 6.9922 2.9609 10.758 2.457 3.7617-0.50781 7.2188-2.3594 9.7266-5.2109 2.5078-2.8516 3.8984-6.5156 3.918-10.312v-141.7c-0.10156-0.94531-0.28906-1.8789-0.56641-2.7891 2.7773-1.6445 5.3633-3.5977 7.6992-5.8242 9.7422-11.672 15.402-26.207 16.121-41.391 0.68359-6.4336 2.0859-12.77 4.1719-18.895 2.75-5.4961 6.1055-10.672 9.9961-15.43 10.57-11.449 17.016-26.098 18.312-41.625-1.3047-15.512-7.75-30.145-18.312-41.582zm-163.38 279.79-22.828-15.113c-2.543-1.7695-5.5625-2.7188-8.6602-2.7188-3.0938 0-6.1172 0.94922-8.6602 2.7188l-22.828 15.113v-105.22l2.7695 0.47266h0.003906c6.4297 0.68359 12.77 2.0859 18.891 4.1719 5.4961 2.7539 10.672 6.1055 15.43 9.9961 7.8125 6.4023 16.535 11.598 25.883 15.414zm94.465 0-22.828-15.113c-2.543-1.7695-5.5625-2.7188-8.6602-2.7188-3.0977 0-6.1172 0.94922-8.6602 2.7188l-22.828 15.113v-75.164c9.332-3.8203 18.039-9.0156 25.836-15.414 4.7578-3.8906 9.9336-7.2422 15.43-9.9961 6.1211-2.0938 12.457-3.4961 18.895-4.1719l2.7695-0.47266zm43.691-215.47c-5.5273 6.8008-10.18 14.262-13.855 22.215-3.168 8.4648-5.2852 17.293-6.2969 26.277-0.30469 8.4414-2.8008 16.664-7.2422 23.852-7.1836 4.4414-15.398 6.9375-23.84 7.2422-8.9883 1.0117-17.82 3.125-26.289 6.2969-7.9531 3.6758-15.418 8.332-22.215 13.855-6.3086 6.0078-14.156 10.152-22.672 11.98-8.5469-1.832-16.418-6.0039-22.734-12.043-6.8008-5.5273-14.266-10.18-22.215-13.855-8.4688-3.168-17.293-5.2852-26.277-6.2969-8.4453-0.30469-16.668-2.8008-23.852-7.2422-4.4414-7.1836-6.9375-15.398-7.2422-23.84-1.0156-8.9883-3.1289-17.816-6.3008-26.289-3.6758-7.9531-8.3281-15.418-13.852-22.215-6.0078-6.3086-10.156-14.156-11.984-22.672 1.8359-8.5469 6.0039-16.418 12.047-22.734 5.5234-6.8008 10.176-14.262 13.852-22.215 3.168-8.4688 5.2852-17.293 6.3008-26.277 0.30078-8.4453 2.7969-16.664 7.2422-23.852 7.1797-4.4414 15.395-6.9375 23.836-7.2422 8.9883-1.0117 17.82-3.1289 26.293-6.3008 7.9531-3.6758 15.414-8.3281 22.215-13.852 6.3086-6.0078 14.152-10.156 22.672-11.984 8.5469 1.8359 16.414 6.0039 22.734 12.047 6.7969 5.5234 14.262 10.176 22.215 13.855 8.4648 3.168 17.293 5.2812 26.273 6.2969 8.4453 0.30078 16.668 2.7969 23.855 7.2422 4.4414 7.1836 6.9375 15.395 7.2422 23.836 1.0117 8.9883 3.125 17.82 6.2969 26.293 3.6758 7.9531 8.332 15.414 13.855 22.215 6.0078 6.3086 10.152 14.152 11.98 22.672-1.8359 8.5469-6.0039 16.414-12.043 22.734z"/>
-               <path d="m400 258.3c-20.879 0-40.902 8.2969-55.664 23.059-14.766 14.762-23.059 34.785-23.059 55.664 0 20.875 8.293 40.898 23.059 55.664 14.762 14.762 34.785 23.055 55.664 23.055 20.875 0 40.898-8.293 55.664-23.055 14.762-14.766 23.055-34.789 23.055-55.664-0.023438-20.871-8.3281-40.879-23.086-55.637-14.754-14.758-34.766-23.059-55.633-23.086zm0 125.95c-12.527 0-24.543-4.9766-33.398-13.832-8.8594-8.8594-13.836-20.871-13.836-33.398 0-12.527 4.9766-24.543 13.836-33.398 8.8555-8.8594 20.871-13.836 33.398-13.836 12.523 0 24.539 4.9766 33.398 13.836 8.8555 8.8555 13.832 20.871 13.832 33.398 0 12.527-4.9766 24.539-13.832 33.398-8.8594 8.8555-20.875 13.832-33.398 13.832z"/>
+                <path
+                  d="m547.63 295.44c-3.8906-4.7578-7.2461-9.9297-9.9961-15.43-2.0938-6.1211-3.4961-12.457-4.1719-18.891-0.71875-15.188-6.3789-29.719-16.121-41.391-11.672-9.7461-26.207-15.406-41.391-16.125-6.4336-0.68359-12.77-2.082-18.895-4.1719-5.4961-2.75-10.672-6.1016-15.43-9.9961-11.441-10.586-26.094-17.047-41.625-18.359-15.512 1.3086-30.145 7.75-41.582 18.312-4.7578 3.8906-9.9336 7.2461-15.43 9.9961-6.1211 2.0977-12.457 3.4961-18.891 4.1719-15.203 0.71094-29.754 6.3711-41.441 16.125-9.7422 11.668-15.402 26.203-16.121 41.391-0.68359 6.4336-2.082 12.77-4.1719 18.891-2.75 5.4961-6.1055 10.672-9.9961 15.43-10.57 11.449-17.016 26.102-18.312 41.629 1.3086 15.512 7.75 30.145 18.312 41.578 3.8906 4.7578 7.2461 9.9336 9.9961 15.43 2.0977 6.1211 3.4961 12.457 4.1719 18.895 0.71875 15.184 6.3828 29.719 16.121 41.391 2.3398 2.2266 4.9219 4.1797 7.6992 5.8242-0.27734 0.92578-0.46875 1.875-0.56641 2.8359v141.7c-0.019531 2.8516 0.75 5.6562 2.2227 8.1016 1.4727 2.4453 3.5898 4.4375 6.1211 5.7539 2.4844 1.3867 5.3047 2.0469 8.1445 1.9102 2.8398-0.14062 5.582-1.0742 7.918-2.6992l38.57-25.664 38.574 25.664c2.5508 1.7422 5.5703 2.6758 8.6602 2.6758s6.1055-0.93359 8.6562-2.6758l38.574-25.664 38.574 25.664c3.1719 2.0898 6.9922 2.9609 10.758 2.457 3.7617-0.50781 7.2188-2.3594 9.7266-5.2109 2.5078-2.8516 3.8984-6.5156 3.918-10.312v-141.7c-0.10156-0.94531-0.28906-1.8789-0.56641-2.7891 2.7773-1.6445 5.3633-3.5977 7.6992-5.8242 9.7422-11.672 15.402-26.207 16.121-41.391 0.68359-6.4336 2.0859-12.77 4.1719-18.895 2.75-5.4961 6.1055-10.672 9.9961-15.43 10.57-11.449 17.016-26.098 18.312-41.625-1.3047-15.512-7.75-30.145-18.312-41.582zm-163.38 279.79-22.828-15.113c-2.543-1.7695-5.5625-2.7188-8.6602-2.7188-3.0938 0-6.1172 0.94922-8.6602 2.7188l-22.828 15.113v-105.22l2.7695 0.47266h0.003906c6.4297 0.68359 12.77 2.0859 18.891 4.1719 5.4961 2.7539 10.672 6.1055 15.43 9.9961 7.8125 6.4023 16.535 11.598 25.883 15.414zm94.465 0-22.828-15.113c-2.543-1.7695-5.5625-2.7188-8.6602-2.7188-3.0977 0-6.1172 0.94922-8.6602 2.7188l-22.828 15.113v-75.164c9.332-3.8203 18.039-9.0156 25.836-15.414 4.7578-3.8906 9.9336-7.2422 15.43-9.9961 6.1211-2.0938 12.457-3.4961 18.895-4.1719l2.7695-0.47266zm43.691-215.47c-5.5273 6.8008-10.18 14.262-13.855 22.215-3.168 8.4648-5.2852 17.293-6.2969 26.277-0.30469 8.4414-2.8008 16.664-7.2422 23.852-7.1836 4.4414-15.398 6.9375-23.84 7.2422-8.9883 1.0117-17.82 3.125-26.289 6.2969-7.9531 3.6758-15.418 8.332-22.215 13.855-6.3086 6.0078-14.156 10.152-22.672 11.98-8.5469-1.832-16.418-6.0039-22.734-12.043-6.8008-5.5273-14.266-10.18-22.215-13.855-8.4688-3.168-17.293-5.2852-26.277-6.2969-8.4453-0.30469-16.668-2.8008-23.852-7.2422-4.4414-7.1836-6.9375-15.398-7.2422-23.84-1.0156-8.9883-3.1289-17.816-6.3008-26.289-3.6758-7.9531-8.3281-15.418-13.852-22.215-6.0078-6.3086-10.156-14.156-11.984-22.672 1.8359-8.5469 6.0039-16.418 12.047-22.734 5.5234-6.8008 10.176-14.262 13.852-22.215 3.168-8.4688 5.2852-17.293 6.3008-26.277 0.30078-8.4453 2.7969-16.664 7.2422-23.852 7.1797-4.4414 15.395-6.9375 23.836-7.2422 8.9883-1.0117 17.82-3.1289 26.293-6.3008 7.9531-3.6758 15.414-8.3281 22.215-13.852 6.3086-6.0078 14.152-10.156 22.672-11.984 8.5469 1.8359 16.414 6.0039 22.734 12.047 6.7969 5.5234 14.262 10.176 22.215 13.855 8.4648 3.168 17.293 5.2812 26.273 6.2969 8.4453 0.30078 16.668 2.7969 23.855 7.2422 4.4414 7.1836 6.9375 15.395 7.2422 23.836 1.0117 8.9883 3.125 17.82 6.2969 26.293 3.6758 7.9531 8.332 15.414 13.855 22.215 6.0078 6.3086 10.152 14.152 11.98 22.672-1.8359 8.5469-6.0039 16.414-12.043 22.734z" />
+                <path
+                  d="m400 258.3c-20.879 0-40.902 8.2969-55.664 23.059-14.766 14.762-23.059 34.785-23.059 55.664 0 20.875 8.293 40.898 23.059 55.664 14.762 14.762 34.785 23.055 55.664 23.055 20.875 0 40.898-8.293 55.664-23.055 14.762-14.766 23.055-34.789 23.055-55.664-0.023438-20.871-8.3281-40.879-23.086-55.637-14.754-14.758-34.766-23.059-55.633-23.086zm0 125.95c-12.527 0-24.543-4.9766-33.398-13.832-8.8594-8.8594-13.836-20.871-13.836-33.398 0-12.527 4.9766-24.543 13.836-33.398 8.8555-8.8594 20.871-13.836 33.398-13.836 12.523 0 24.539 4.9766 33.398 13.836 8.8555 8.8555 13.832 20.871 13.832 33.398 0 12.527-4.9766 24.539-13.832 33.398-8.8594 8.8555-20.875 13.832-33.398 13.832z" />
               </g>
-             </svg>
+            </svg>
           </div>
           <h5 class="name">
             quality
           </h5>
         </div>
 
-        <div class="box">
+        <div class="box" id="myBtnBudget">
           <div class="img-box">
 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256"
+              height="256" viewBox="0 0 256 256" xml:space="preserve">
 
               <defs>
               </defs>
-              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                <path d="M 2.53 12.35 c -0.702 0 -1.274 -0.648 -1.161 -1.374 c 0.626 -4.024 3.96 -7.096 7.977 -7.096 h 5.847 l 6.243 8.47 H 2.53 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(196,205,223); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 26.486 79.149" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 70.206 78.462 v -66.32 c 0 -4.564 -3.7 -8.264 -8.264 -8.264 h 0 h 0 H 9.983 h 0 h 0 c 4.564 0 8.264 3.7 8.264 8.264 v 66.32 H 70.206 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <rect x="47.68" y="26.34" rx="0" ry="0" width="41.32" height="59.79" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(124,144,180); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="53.65" y="32.31" rx="0" ry="0" width="29.37" height="13.08" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="53.65" y="74.29" rx="0" ry="0" width="6.57" height="5.86" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="76.45" y="63.39" rx="0" ry="0" width="6.57" height="16.76" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="65.05" y="74.29" rx="0" ry="0" width="6.57" height="5.86" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="53.65" y="63.39" rx="0" ry="0" width="6.57" height="5.86" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="65.05" y="63.39" rx="0" ry="0" width="6.57" height="5.86" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="53.65" y="52.49" rx="0" ry="0" width="6.57" height="5.86" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="76.45" y="52.49" rx="0" ry="0" width="6.57" height="5.86" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <rect x="65.05" y="52.49" rx="0" ry="0" width="6.57" height="5.86" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-                <path d="M 70.196 27.336 c -0.553 0 -1 -0.448 -1 -1 V 12.86 c 0 -4.402 -3.581 -7.983 -7.983 -7.983 c -0.553 0 -1 -0.448 -1 -1 s 0.447 -1 1 -1 c 5.505 0 9.983 4.479 9.983 9.983 v 13.476 C 71.196 26.889 70.749 27.336 70.196 27.336 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 47.678 79.542 H 18.967 c -0.552 0 -1 -0.447 -1 -1 V 13.86 H 1 c -0.552 0 -1 -0.448 -1 -1 c 0 -5.505 4.479 -9.983 9.983 -9.983 s 9.983 4.479 9.983 9.983 v 64.682 h 27.711 c 0.553 0 1 0.447 1 1 S 48.23 79.542 47.678 79.542 z M 2.063 11.86 h 15.842 c -0.493 -3.932 -3.857 -6.983 -7.921 -6.983 S 2.556 7.928 2.063 11.86 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 61.213 4.877 H 9.983 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 51.229 c 0.553 0 1 0.448 1 1 S 61.766 4.877 61.213 4.877 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 89 87.123 H 47.678 c -0.553 0 -1 -0.447 -1 -1 V 26.336 c 0 -0.552 0.447 -1 1 -1 H 89 c 0.553 0 1 0.448 1 1 v 59.787 C 90 86.676 89.553 87.123 89 87.123 z M 48.678 85.123 H 88 V 27.336 H 48.678 V 85.123 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 83.025 46.388 H 53.651 c -0.553 0 -1 -0.447 -1 -1 V 32.311 c 0 -0.552 0.447 -1 1 -1 h 29.374 c 0.553 0 1 0.448 1 1 v 13.077 C 84.025 45.94 83.578 46.388 83.025 46.388 z M 54.651 44.388 h 27.374 V 33.311 H 54.651 V 44.388 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 60.226 81.148 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 61.226 80.701 60.778 81.148 60.226 81.148 z M 54.651 79.148 h 4.574 v -3.86 h -4.574 V 79.148 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 83.025 81.148 h -6.574 c -0.553 0 -1 -0.447 -1 -1 V 63.392 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 16.757 C 84.025 80.701 83.578 81.148 83.025 81.148 z M 77.451 79.148 h 4.574 V 64.392 h -4.574 V 79.148 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 71.626 81.148 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 72.626 80.701 72.179 81.148 71.626 81.148 z M 66.052 79.148 h 4.574 v -3.86 h -4.574 V 79.148 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 60.226 70.252 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 61.226 69.805 60.778 70.252 60.226 70.252 z M 54.651 68.252 h 4.574 v -3.86 h -4.574 V 68.252 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 71.626 70.252 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 72.626 69.805 72.179 70.252 71.626 70.252 z M 66.052 68.252 h 4.574 v -3.86 h -4.574 V 68.252 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 60.226 59.356 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.861 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.861 C 61.226 58.909 60.778 59.356 60.226 59.356 z M 54.651 57.356 h 4.574 v -3.861 h -4.574 V 57.356 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 83.025 59.356 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.861 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.861 C 84.025 58.909 83.578 59.356 83.025 59.356 z M 77.451 57.356 h 4.574 v -3.861 h -4.574 V 57.356 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 71.626 59.356 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.861 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.861 C 72.626 58.909 72.179 59.356 71.626 59.356 z M 66.052 57.356 h 4.574 v -3.861 h -4.574 V 57.356 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 62.845 16.235 H 26.318 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 36.527 c 0.553 0 1 0.448 1 1 S 63.397 16.235 62.845 16.235 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 38.226 26.737 H 26.318 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.448 1 1 S 38.778 26.737 38.226 26.737 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 38.226 37.238 H 26.318 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.448 1 1 S 38.778 37.238 38.226 37.238 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 38.226 47.74 H 26.318 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.447 1 1 S 38.778 47.74 38.226 47.74 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 38.226 58.241 H 26.318 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.447 1 1 S 38.778 58.241 38.226 58.241 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <path d="M 38.226 68.743 H 26.318 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.447 1 1 S 38.778 68.743 38.226 68.743 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                <path
+                  d="M 2.53 12.35 c -0.702 0 -1.274 -0.648 -1.161 -1.374 c 0.626 -4.024 3.96 -7.096 7.977 -7.096 h 5.847 l 6.243 8.47 H 2.53 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(196,205,223); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path d="M 26.486 79.149"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 70.206 78.462 v -66.32 c 0 -4.564 -3.7 -8.264 -8.264 -8.264 h 0 h 0 H 9.983 h 0 h 0 c 4.564 0 8.264 3.7 8.264 8.264 v 66.32 H 70.206 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <rect x="47.68" y="26.34" rx="0" ry="0" width="41.32" height="59.79"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(124,144,180); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="53.65" y="32.31" rx="0" ry="0" width="29.37" height="13.08"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="53.65" y="74.29" rx="0" ry="0" width="6.57" height="5.86"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="76.45" y="63.39" rx="0" ry="0" width="6.57" height="16.76"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="65.05" y="74.29" rx="0" ry="0" width="6.57" height="5.86"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="53.65" y="63.39" rx="0" ry="0" width="6.57" height="5.86"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="65.05" y="63.39" rx="0" ry="0" width="6.57" height="5.86"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="53.65" y="52.49" rx="0" ry="0" width="6.57" height="5.86"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="76.45" y="52.49" rx="0" ry="0" width="6.57" height="5.86"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <rect x="65.05" y="52.49" rx="0" ry="0" width="6.57" height="5.86"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,236,246); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " />
+                <path
+                  d="M 70.196 27.336 c -0.553 0 -1 -0.448 -1 -1 V 12.86 c 0 -4.402 -3.581 -7.983 -7.983 -7.983 c -0.553 0 -1 -0.448 -1 -1 s 0.447 -1 1 -1 c 5.505 0 9.983 4.479 9.983 9.983 v 13.476 C 71.196 26.889 70.749 27.336 70.196 27.336 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 47.678 79.542 H 18.967 c -0.552 0 -1 -0.447 -1 -1 V 13.86 H 1 c -0.552 0 -1 -0.448 -1 -1 c 0 -5.505 4.479 -9.983 9.983 -9.983 s 9.983 4.479 9.983 9.983 v 64.682 h 27.711 c 0.553 0 1 0.447 1 1 S 48.23 79.542 47.678 79.542 z M 2.063 11.86 h 15.842 c -0.493 -3.932 -3.857 -6.983 -7.921 -6.983 S 2.556 7.928 2.063 11.86 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 61.213 4.877 H 9.983 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 51.229 c 0.553 0 1 0.448 1 1 S 61.766 4.877 61.213 4.877 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 89 87.123 H 47.678 c -0.553 0 -1 -0.447 -1 -1 V 26.336 c 0 -0.552 0.447 -1 1 -1 H 89 c 0.553 0 1 0.448 1 1 v 59.787 C 90 86.676 89.553 87.123 89 87.123 z M 48.678 85.123 H 88 V 27.336 H 48.678 V 85.123 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 83.025 46.388 H 53.651 c -0.553 0 -1 -0.447 -1 -1 V 32.311 c 0 -0.552 0.447 -1 1 -1 h 29.374 c 0.553 0 1 0.448 1 1 v 13.077 C 84.025 45.94 83.578 46.388 83.025 46.388 z M 54.651 44.388 h 27.374 V 33.311 H 54.651 V 44.388 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 60.226 81.148 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 61.226 80.701 60.778 81.148 60.226 81.148 z M 54.651 79.148 h 4.574 v -3.86 h -4.574 V 79.148 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 83.025 81.148 h -6.574 c -0.553 0 -1 -0.447 -1 -1 V 63.392 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 16.757 C 84.025 80.701 83.578 81.148 83.025 81.148 z M 77.451 79.148 h 4.574 V 64.392 h -4.574 V 79.148 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 71.626 81.148 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 72.626 80.701 72.179 81.148 71.626 81.148 z M 66.052 79.148 h 4.574 v -3.86 h -4.574 V 79.148 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 60.226 70.252 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 61.226 69.805 60.778 70.252 60.226 70.252 z M 54.651 68.252 h 4.574 v -3.86 h -4.574 V 68.252 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 71.626 70.252 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.86 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.86 C 72.626 69.805 72.179 70.252 71.626 70.252 z M 66.052 68.252 h 4.574 v -3.86 h -4.574 V 68.252 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 60.226 59.356 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.861 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.861 C 61.226 58.909 60.778 59.356 60.226 59.356 z M 54.651 57.356 h 4.574 v -3.861 h -4.574 V 57.356 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 83.025 59.356 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.861 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.861 C 84.025 58.909 83.578 59.356 83.025 59.356 z M 77.451 57.356 h 4.574 v -3.861 h -4.574 V 57.356 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 71.626 59.356 h -6.574 c -0.553 0 -1 -0.447 -1 -1 v -5.861 c 0 -0.553 0.447 -1 1 -1 h 6.574 c 0.553 0 1 0.447 1 1 v 5.861 C 72.626 58.909 72.179 59.356 71.626 59.356 z M 66.052 57.356 h 4.574 v -3.861 h -4.574 V 57.356 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 62.845 16.235 H 26.318 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 36.527 c 0.553 0 1 0.448 1 1 S 63.397 16.235 62.845 16.235 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 38.226 26.737 H 26.318 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.448 1 1 S 38.778 26.737 38.226 26.737 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 38.226 37.238 H 26.318 c -0.552 0 -1 -0.448 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.448 1 1 S 38.778 37.238 38.226 37.238 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 38.226 47.74 H 26.318 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.447 1 1 S 38.778 47.74 38.226 47.74 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 38.226 58.241 H 26.318 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.447 1 1 S 38.778 58.241 38.226 58.241 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                <path
+                  d="M 38.226 68.743 H 26.318 c -0.552 0 -1 -0.447 -1 -1 s 0.448 -1 1 -1 h 11.908 c 0.552 0 1 0.447 1 1 S 38.778 68.743 38.226 68.743 z"
+                  style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                  transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
               </g>
-              </svg>
+            </svg>
           </div>
           <h5 class="name">
-            Budget 
+            Budget
           </h5>
         </div>
 
-        <div class="box active">
+        <div class="box active" id="myBtnReport">
           <div class="img-box">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-        <!-- Report Symbol -->
-        <rect x="16" y="12" width="32" height="40" fill="none" stroke="white" stroke-width="2" rx="4" />
-        <line x1="20" y1="20" x2="44" y2="20" stroke="white" stroke-width="2" />
-        <line x1="20" y1="28" x2="44" y2="28" stroke="white" stroke-width="2" />
-        <line x1="20" y1="36" x2="36" y2="36" stroke="white" stroke-width="2" />
-        
-        <!-- White Line Across Icon -->
-        <!-- <line x1="12" y1="52" x2="52" y2="12" stroke="white" stroke-width="2" /> -->
-    </svg>
+              <!-- Report Symbol -->
+              <rect x="16" y="12" width="32" height="40" fill="none" stroke="white" stroke-width="2" rx="4" />
+              <line x1="20" y1="20" x2="44" y2="20" stroke="white" stroke-width="2" />
+              <line x1="20" y1="28" x2="44" y2="28" stroke="white" stroke-width="2" />
+              <line x1="20" y1="36" x2="36" y2="36" stroke="white" stroke-width="2" />
+
+              <!-- White Line Across Icon -->
+              <!-- <line x1="12" y1="52" x2="52" y2="12" stroke="white" stroke-width="2" /> -->
+            </svg>
             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
               <g id="paint-painted-paint_roller-home-house" data-name="paint-painted-paint roller-home-house">
                 <path
@@ -250,7 +429,7 @@
           </h5>
         </div>
 
-        <div class="box">
+        <div class="box" id="myBtnRenovate">
           <div class="img-box">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
               <path
@@ -283,7 +462,9 @@
               About us
             </h2>
             <p>
-              Suwan Construction co.,ltd. / SAM Consultant. provides construction management and supervision services by a team of experienced engineers, architects and technicians, from the design stage until construction is completed and delivered to the customer.
+              Suwan Construction co.,ltd. / SAM Consultant. provides construction management and supervision services by
+              a team of experienced engineers, architects and technicians, from the design stage until construction is
+              completed and delivered to the customer.
             </p>
             <!-- <a href="">
               Read More
@@ -305,14 +486,14 @@
 
   <!-- professional section -->
 
-  <section class="professional_section layout_padding">
+  <!-- <section class="professional_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
             <img src="images/pngegg (0).png" alt="">
-            <!-- <img src="images/professional-img1.png" alt=""> -->
-            <!-- <img src="images/professional-img.png" alt=""> -->
+            <img src="images/professional-img1.png" alt="">
+            <img src="images/professional-img.png" alt="">
           </div>
         </div>
         <div class="col-md-6 ">
@@ -324,18 +505,176 @@
             <p>
               Specialised care and support provided to individuals in their own homes. These services are designed to help people live independently, improve their quality of life and receive personalised care tailored to the specific needs of the resident.
             </p>
-            <!-- <a href="">
+            <a href="">
               Read More
-            </a> -->
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- end professional section -->
 
   <!-- service section -->
+
+  <!-- project section start -->
+
+  <section class="project_section layout_padding">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        <h2> our projects </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <!-- <a href="project.html"> -->
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/462800168_519897684165799_7389463995673668569_n.jpg" alt=""
+                style="width: 270px; height: 350px;" />
+            </div>
+            <div class="detail-box">
+              <h5 style="margin-top: 5px;">
+                Ao Por Villa
+              </h5>
+              <p style="font-size: 0.8rem;">
+                Luxury SIngle pool villa ( To the owner) 2,650 sqm. <br>
+                98 million baht
+              </p>
+            </div>
+          </div>
+          <!-- </a> -->
+        </div>
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/462747127_519760844179483_7570350599787630920_n.jpg" alt=""
+                style="width: 300px; height: 350px;" />
+            </div>
+            <div class="detail-box">
+              <h5 style="margin-top: 5px;">
+                On The Hill
+              </h5>
+              <p style="font-size: 0.8rem;">
+                3 storey building 15 units. ( 1,450 sqm.) <br>
+                58 million baht
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/images.jpeg" alt="" style="width: 300px; height: 350px;" />
+            </div>
+            <div class="detail-box">
+              <h5 style="margin-top: 5px;">
+                The Six Senses Yao noi Hotel
+              </h5>
+              <p style="font-size: 0.8rem;">
+                5 stars Hotel, 53 Pool Villas (Renovation 8 units) <br>
+                45 million baht
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/Andakira.jpg" alt="" style="width: 270px; height: 275px;" />
+            </div>
+            <div class="detail-box">
+              <h5 style="margin-top: 5px;">
+                Andakira Tritrang Beach
+              </h5>
+              <p style="font-size: 0.8rem;">
+                13 Luxury pool villas and 6 Buildings <br>
+                (5 storey each) totally 213 rooms Construction <br>
+                580 million baht
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/Novotel.jpg" alt="" style="width: 270px; height: 275px;" />
+            </div>
+            <div class="detail-box">
+              <h5 style="margin-top: 5px;">
+                Novotel Kamala Beach Hotel
+              </h5>
+              <p style="font-size: 0.8rem;">
+                15 Luxury pool villas and 5 Buildings <br>
+                (4 storey each) totally 178 units <br>
+                600 million baht
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mx-auto">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/California.jpg" alt="" style="width: 270px; height: 275px;" />
+            </div>
+            <div class="detail-box">
+              <h5 style="margin-top: 5px;">
+                Home renovations
+              </h5>
+              <p style="font-size: 0.8rem;">
+                ศุภาลัย ซิตี้ รีสอร์ท คอนโด <br>
+                เคหะบ้านพอน ถลาง <br>
+                หมู่บ้านแคลิฟอร์เนีย จ.ภูเก็ต
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="btn-box">
+        <a href="project.html">
+          project all
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- <section class="project" id="project">
+
+    <div class="heading_container heading_center">
+      <h2 class="head_project"> our projects</h2>
+    </div>
+
+    <div class="box-container">
+
+      <div class="box">
+        
+        <div class="col-sm">
+          <h6>Project Ao Por Villa, Phuket, Thailand</h6>          
+          <img src="images/462800168_519897684165799_7389463995673668569_n.jpg" class="project_img" alt="">
+        </div>
+
+        <div class="col-sm">
+          <h6>Project Ao Por Villa, Phuket, Thailand</h6>          
+          <img src="images/462800168_519897684165799_7389463995673668569_n.jpg" class="project_img" alt="">
+        </div>
+
+        <div class="col-sm">
+          <h6>Project Ao Por Villa, Phuket, Thailand</h6>          
+          <img src="images/462800168_519897684165799_7389463995673668569_n.jpg" class="project_img" alt="">
+        </div>
+        
+      </div>
+    </div>
+
+</section> -->
+  <!-- project section end -->
 
   <section class="service_section layout_padding">
     <div class="container ">
@@ -353,8 +692,9 @@
                 Maintenance
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                PM to prevent machine damage <br>
+                Troubleshoot when machine malfunction <br>
+                Analyze the cause of machine malfunction
               </p>
             </div>
           </div>
@@ -369,8 +709,8 @@
                 Electrical
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                Electrical contractor for construction projects <br>
+                from wiring installation to project management.
               </p>
             </div>
           </div>
@@ -385,18 +725,18 @@
                 Plumbing
               </h5>
               <p>
-                when looking at its layout. The point of using Lorem Ipsum is
-                that it has a more-or-less normal
+                Plumbing work in construction involves the installation of faucets <br>
+                sinks, toilets, sinks, showers, etc.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="btn-box">
+      <!-- <div class="btn-box">
         <a href="">
           View More
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -417,12 +757,13 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="images/client-1.jpg" alt="">
+                  <img src="images/262356435_10227436200556377_329451224987378829_n.jpg" alt="">
+                  <!-- <img src="images/client-1.jpg" alt=""> -->
                 </div>
                 <div class="client_detail">
                   <div class="client_info">
                     <h6>
-                      Jorch morik
+                      Anchana Gallagher
                     </h6>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -435,8 +776,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of
-                  over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  Beautiful
                 </p>
               </div>
             </div>
@@ -445,12 +785,13 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="images/client-2.jpg" alt="">
+                  <img src="images/471397569_2038582753247312_4122438248604165801_n.jpg" alt="">
+                  <!-- <img src="images/client-2.jpg" alt=""> -->
                 </div>
                 <div class="client_detail">
                   <div class="client_info">
                     <h6>
-                      Jorch morik
+                      Parinn Ch
                     </h6>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -463,8 +804,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of
-                  over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  The view is also very beautiful.
                 </p>
               </div>
             </div>
@@ -473,12 +813,13 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="images/client-1.jpg" alt="">
+                  <img src="images/466116459_8670164746393584_6003171491352916494_n.jpg" alt="">
+                  <!-- <img src="images/client-1.jpg" alt=""> -->
                 </div>
                 <div class="client_detail">
                   <div class="client_info">
                     <h6>
-                      Jorch morik
+                      Saysuda Sungla
                     </h6>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -491,8 +832,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of
-                  over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  Excellent. Thumbs up.
                 </p>
               </div>
             </div>
@@ -501,12 +841,13 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="images/client-2.jpg" alt="">
+                  <img src="images/464924348_122185801868138148_7309561033291419949_n.jpg" alt="">
+                  <!-- <img src="images/client-2.jpg" alt=""> -->
                 </div>
                 <div class="client_detail">
                   <div class="client_info">
                     <h6>
-                      Jorch morik
+                      สายฝน หงษ์บุตร
                     </h6>
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -519,8 +860,7 @@
               </div>
               <div class="client_text">
                 <p>
-                  chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of
-                  over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  Excellent. Thumbs up.
                 </p>
               </div>
             </div>
@@ -584,30 +924,33 @@
       <div class="row">
         <div class="col-md-6">
           <!-- <form action=""> -->
-            <div>
-              <input type="text" id="Namemail" placeholder="Name">
-            </div>
-            <div>
-              <input type="text" id="Phonemail" placeholder="Phone Number" />
-            </div>
-            <div>
-              <input type="email" id="Emailaddress" placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" id="Messagemail" class="message-box" placeholder="Message" />
-            </div>
-            <div class="d-flex ">
-              <button onclick="contactmail()">
-                SEND mail
-              </button>
-            </div>
+          <div>
+            <input type="text" id="Namemail" placeholder="Name">
+          </div>
+          <div>
+            <input type="text" id="Phonemail" placeholder="Phone Number" />
+          </div>
+          <div>
+            <input type="email" id="Emailaddress" placeholder="Email" />
+          </div>
+          <div>
+            <input type="text" id="Messagemail" class="message-box" placeholder="Message" />
+          </div>
+          <div class="d-flex ">
+            <button onclick="contactmail()">
+              SEND mail
+            </button>
+          </div>
           <!-- </form> -->
         </div>
         <div class="col-md-6">
           <div class="map_container">
             <div class="map">
               <!-- <div id="googleMap" style="width:100%;height:100%;"></div> -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3951.824740421778!2d98.3892883!3d7.913369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503181364d7191%3A0xb368c23e68224a5!2sSoi%20Hong%20But%2C%20Tambon%20Ratsada%2C%20Amphoe%20Mueang%20Phuket%2C%20Chang%20Wat%20Phuket%2083000!5e0!3m2!1sen!2sth!4v1735114689358!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3951.824740421778!2d98.3892883!3d7.913369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503181364d7191%3A0xb368c23e68224a5!2sSoi%20Hong%20But%2C%20Tambon%20Ratsada%2C%20Amphoe%20Mueang%20Phuket%2C%20Chang%20Wat%20Phuket%2083000!5e0!3m2!1sen!2sth!4v1735114689358!5m2!1sen!2sth"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -733,6 +1076,7 @@
   <!-- Google Map -->
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+
   <!-- End Google Map -->
 
 

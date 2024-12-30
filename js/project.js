@@ -23,72 +23,72 @@ function validatePhone(phone) {
 //   "+91 (123) 456-7890",
 // ];
 
-// Get the modal
-var myModalSupervision = document.getElementById("myModalSupervision");
-var myModalQuality = document.getElementById("myModalQuality");
-var myModalBudget = document.getElementById("myModalBudget");
-var myModalReport = document.getElementById("myModalReport");
-var myModalRenovate = document.getElementById("myModalRenovate");
+// // Get the modal
+// var myModalSupervision = document.getElementById("myModalSupervision");
+// var myModalQuality = document.getElementById("myModalQuality");
+// var myModalBudget = document.getElementById("myModalBudget");
+// var myModalReport = document.getElementById("myModalReport");
+// var myModalRenovate = document.getElementById("myModalRenovate");
 
-// Get the button that opens the modal
-var btnSupervision = document.getElementById("myBtnSupervision");
-var btnQuality = document.getElementById("myBtnQuality");
-var btnBudget = document.getElementById("myBtnBudget");
-var btnReport = document.getElementById("myBtnReport");
-var btnRenovate = document.getElementById("myBtnRenovate");
+// // Get the button that opens the modal
+// var btnSupervision = document.getElementById("myBtnSupervision");
+// var btnQuality = document.getElementById("myBtnQuality");
+// var btnBudget = document.getElementById("myBtnBudget");
+// var btnReport = document.getElementById("myBtnReport");
+// var btnRenovate = document.getElementById("myBtnRenovate");
 
-// Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-var spanSupervision = document.getElementsByClassName("closeSupervision")[0];
-var spanQuality = document.getElementsByClassName("closeQuality")[0];
-var spanBudget = document.getElementsByClassName("closeBudget")[0];
-var spanReport = document.getElementsByClassName("closeReport")[0];
-var spanRenovate = document.getElementsByClassName("closeRenovate")[0];
+// // Get the <span> element that closes the modal
+// // var span = document.getElementsByClassName("close")[0];
+// var spanSupervision = document.getElementsByClassName("closeSupervision")[0];
+// var spanQuality = document.getElementsByClassName("closeQuality")[0];
+// var spanBudget = document.getElementsByClassName("closeBudget")[0];
+// var spanReport = document.getElementsByClassName("closeReport")[0];
+// var spanRenovate = document.getElementsByClassName("closeRenovate")[0];
 
-// When the user clicks on the button, open the modal
-btnSupervision.onclick = function () {
-  myModalSupervision.style.display = "block";
-};
-btnQuality.onclick = function () {
-  myModalQuality.style.display = "block";
-};
-btnBudget.onclick = function () {
-  myModalBudget.style.display = "block";
-};
-btnReport.onclick = function () {
-  myModalReport.style.display = "block";
-};
-btnRenovate.onclick = function () {
-  myModalRenovate.style.display = "block";
-};
+// // When the user clicks on the button, open the modal
+// btnSupervision.onclick = function () {
+//   myModalSupervision.style.display = "block";
+// };
+// btnQuality.onclick = function () {
+//   myModalQuality.style.display = "block";
+// };
+// btnBudget.onclick = function () {
+//   myModalBudget.style.display = "block";
+// };
+// btnReport.onclick = function () {
+//   myModalReport.style.display = "block";
+// };
+// btnRenovate.onclick = function () {
+//   myModalRenovate.style.display = "block";
+// };
 
-spanSupervision.onclick = function () {
-  myModalSupervision.style.display = "none";
-};
-spanQuality.onclick = function () {
-  myModalQuality.style.display = "none";
-};
-spanBudget.onclick = function () {
-  myModalBudget.style.display = "none";
-};
-spanReport.onclick = function () {
-  myModalReport.style.display = "none";
-};
-spanRenovate.onclick = function () {
-  myModalRenovate.style.display = "none";
-};
+// spanSupervision.onclick = function () {
+//   myModalSupervision.style.display = "none";
+// };
+// spanQuality.onclick = function () {
+//   myModalQuality.style.display = "none";
+// };
+// spanBudget.onclick = function () {
+//   myModalBudget.style.display = "none";
+// };
+// spanReport.onclick = function () {
+//   myModalReport.style.display = "none";
+// };
+// spanRenovate.onclick = function () {
+//   myModalRenovate.style.display = "none";
+// };
 
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    myModalSupervision.style.display = "none";
-    myModalQuality.style.display = "none";
-    myModalBudget.style.display = "none";
-    myModalReport.style.display = "none";
-    myModalRenovate.style.display = "none";
-  }
-};
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     myModalSupervision.style.display = "none";
+//     myModalQuality.style.display = "none";
+//     myModalBudget.style.display = "none";
+//     myModalReport.style.display = "none";
+//     myModalRenovate.style.display = "none";
+//   }
+// };
 
 
 function contactmail() {

@@ -13,12 +13,12 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require($_SERVER['DOCUMENT_ROOT'] . "/suwanSam24/construckSuwanSam/blob/main2/vendor/autoload.php");
+// require($_SERVER['DOCUMENT_ROOT'] . "/suwanSam24/construckSuwanSam/blob/main2/vendor/autoload.php");
 // require("https://construcksuwansam.onrender.com/suwanSam24/construckSuwanSam/blob/main2/vendor/autoload.php");
 // require("https://github.com/suwanSam24/construckSuwanSam/tree/main2/vendor/autoload.php");
 // require("https://construcksuwansam.onrender.com/vendor/autoload.php");
 // require($_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php");
-// require("/xampp/htdocs/construckSuwanSam/vendor/autoload.php");
+require("/xampp/htdocs/construckSuwanSam/vendor/autoload.php");
 header('Content-Type: application/json');
 
 //Create an instance; passing `true` enables exceptions
